@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    th, td { text-align: center; }
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <h3>Bootstrap Grid Example: Small Devices</h3>
+  <table class="table table-hover table-bordered">
+    <thead><tr>
+      <th></th>
+      <th>Extra Small</th>
+      <th style="color:white; background-color:#555">Small</th>
+      <th>Medium</th>
+      <th>Large</th>
+    </tr></thead>
+
+    <tbody>
+      <tr>
+        <td>Class prefix</td>
+        <td><code>.col-xs</code></td>
+        <td style="color:white; background-color:#555"><code>.col-sm</code></td>
+        <td><code>.col-md</code></td>
+        <td><code>.col-lg</code></td>
+      </tr>
+
+
+      <tr>
+        <td>Screen width</td>
+        <td>&lt768px</td>
+        <td style="color:white; background-color:#555">&gt=768px</td>
+        <td>&gt=992x</td>
+        <td>&gt=1200px</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Assume we have a simple layout with two columns. We want the columns to be split 25%/75% for smal devices</p>
+  <p><b>Tip:</b>Small devices are defined as having a screen width from <b>768px to 991px</b>
+  <p>For small devices, we will use the <code>.col-sm-*</code> classes</p>
+  <p>We will add the following classes to our two columns: <code>.col-sm-3</code> & <code>.col-sm-9</code></p>
+  <p>Now Bootstrap is going to say "at the small size, look for classes with <code>-sm</code> in them and use those"</p>
+  <p>The following will result in a 25%/75% split on small (and medium and large) devices. On extra small devices, it will automatically stack (100%)</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3" style="background-color:yellow">
+        <p>col-sm-3</p>
+      </div>
+
+      <div class="col-sm-9" style="background-color:pink">
+        <p >col-sm-9</p>
+      </div>
+    </div>
+  </div>
+  <p style="padding:30px; background-color:lightyellow"><b>Note:</b> Make sure that the sum always adds up to 12</p>
+</div>
+</body>
+</html>

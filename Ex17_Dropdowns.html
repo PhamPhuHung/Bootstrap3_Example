@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+<h3>Basic Dropdown</h3>
+<p>A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined list</p>
+<p>The <code>.dropdown</code> class indicates a dropdown menu</p>
+<p>To open the dropdown menu, use a button or a link with a class of <code>.dropdown-toggle</code> and the <code>data-toggle="dropdown"</code> attribute</p>
+<p>The <code>.caret</code> class creates a caret arrow icon, which indicates that the button is a dropdown</p>
+<p>Add the <code>.dropdown-menu</code> class to a <code>&ltul&gt</code> element to actually build the dropdown menu</p>
+<div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div>
+</div>
+
+<div class="container">
+<h3>Dropdown Divider</h3>
+<p>The <code>.divider</code> class is used to separate links inside the dropdown menu with a thin horizontal border:</p>
+<div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+    <li class="divider"></li>
+    <li><a href="#">About us</a></li>
+  </ul>
+</div>
+</div>
+
+<div class="container">
+<h3>Dropdown Header</h3>
+<p>The <code.dropdown-header</code> class is used to add headers inside the dropdown menu</p>
+<div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Tutorials
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li class="dropdown-header">Dropdown header 1</li>
+    <li><a href=#">HTML</li></a>
+    <li><a href=#">CSS</li></a>
+    <li><a href=#">JavaScript</li></a>
+    <li class="divider"></li>
+    <li class="dropdown-header">Dropdown header 2</li>
+    <li><a href="#">About us</a></li>
+  </ul>
+</div>
+</div>
+
+<div class="container">
+<h3>Disable and Active items</h3>
+<div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown Disabled/Active Example
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Normal</a></li>
+    <li class="disabled"><a href="#">Disabled</a></li>
+    <li class="active"><a href="#">Active</a></li>
+  </ul>
+</div>
+</div>
+
+<div class="container">
+<h3>Dropdown Position</h3>
+<p>To right-align the dropdown, add the <code>.dropdown-menu-right</code> class to the element with <code>.dropdown-menu</code>:</p>
+<div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown Position Example
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-right">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+    <li class="divider"></li>
+    <li><a href="#">About us</a></li>
+  </ul>
+</div>
+</div>
+
+<div class="container">
+<h3>Drop Up</h3>
+<div class="dropup">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropup Example
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+    <li class="divider"></li>
+    <li><a href="#">About us</a></li>
+  </ul>
+</div>
+</div>
+
+<div class="container">
+<h3>Dropdown Accessibility</h3>
+<p>To help improve accessibility for people using screen readers, you should include the following <code>role</code> and <code>aria-*</code> attributes, when creating a dropdown menu</p>
+<div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+    <li><a href="#" role="menuitem">HTML</a></li>
+    <li><a href="#" role="menuitem">CSS</a></li>
+    <li><a href="#" role="menuitem">JavaScript</a></li>
+    <li class="divider"></li>
+    <li><a href="#" role="menuitem">About us</a></li>
+  </ul>
+</div>
+</div>
+</body>
+</html>

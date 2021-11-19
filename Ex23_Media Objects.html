@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <h3>Media Objects</h3>
+  <p>Bootstrap provides an easy way to align media objects (like images or videos) to the left or to the right of some content. This can used to display blog coments tweets and so on:</p>
+</div>
+
+<div class="container">
+  <h3>Basic Media Object</h3>
+  <p>Use a <code>&ltdiv&gt</code> element with the <code>.media</code> class to create a container for media objects</p>
+  <p>Use the <code>.media-left</code> class to align the media object (image) to the left, or the <code>.media-right</code> class to align it to the right</code>
+  <p>Text that should appear next to the image, is place inside a container with class="<code>media-body</code>"</p>
+  <p>Additionally, you can use <code>.media-heading</code> for headings</p>
+  <div class="media">
+    <div class="media-left">
+      <img src="img/img_avatar1.png" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">John Doe</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    </div>
+  </div>
+
+  <div class="media">
+    <div class="media-body">
+      <h4 class="media-heading">John Doe</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    </div>
+    <div class="media-right">
+      <img src="img/img_avatar1.png" class="media-object" style="width:60px">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h3>Top, Middle or Bottom Alignment</h3>
+  <p>The media object can also be top, middle or bottom aligned with the <code>media-top</code>, <code>media-middle</code> or <code>media-bottom</code> class</p>
+  <div class="media">
+    <div class="media-left media-top">
+      <img src="img/img_avatar1.png" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Media Top</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br><br>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br><br>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br><br>
+    </div>
+  </div>
+
+<div class="media">
+    <div class="media-left media-middle">
+      <img src="img/img_avatar1.png" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Media Middle</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br><br>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br><br>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br><br>
+    </div>
+  </div>
+
+<div class="media">
+    <div class="media-left media-bottom">
+      <img src="img/img_avatar1.png" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Media Bottom</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br><br>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br><br>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br><br>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h3>Nesting Media Objects</h3>
+  <p>MEdia objects can also be nested (a media object inside a media object)</p>
+  <div class="media">
+    <div class="media-left">
+      <img src="img/img_avatar1.png" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">John Doe</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+
+      <div class="media">
+        <div class="media-left">
+          <img src="img/img_avatar2.png" class="media-object" style="width:60px">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">John Doe</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+
+          <div class="media">
+            <div class="media-left">
+              <img src="img/img_avatar3.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">John Doe</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="media">
+    <div class="media-left">
+      <img src="img/img_avatar5.png" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">John Doe</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

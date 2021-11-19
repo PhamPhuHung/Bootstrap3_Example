@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+<h3>Menus</h3>
+<p>Most web pages have some kind of a menu</p>
+<p>In HTML a menu is often defined in an unordered list <code>&ltul&gt</code> (and styled afterwards), like this</p>
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Menu1</a></li>
+  <li><a href="#">Menu2</a></li>
+  <li><a href="#">Menu3</a></li>
+</ul>
+<p>If you want to create a horizontal menu of the list above, add the <code>.list-inline</code> class to <code>&lt/ul&gt</code>
+<ul class="list-inline">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Menu1</a></li>
+  <li><a href="#">Menu2</a></li>
+  <li><a href="#">Menu3</a></li>
+</ul>
+</div>
+
+<div class="container">
+<h3>Tabs</h3>
+<p>Tabs are created with <code>&ltul class="nav nav-tabs"&gt</code></p>
+<p><b>Tip:</b> Also mark the current page with <code>&ltli class="active"&gt</code></p>
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Menu1</a></li>
+  <li><a href="#">Menu2</a></li>
+  <li><a href="#">Menu3</a></li>
+</ul><br>
+
+<p>Tabs can also be display vertically. Just add the <code>.nav-stacked</code> class</p>
+<ul class="nav nav-tabs nav-stacked">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Menu1</a></li>
+  <li><a href="#">Menu2</a></li>
+  <li><a href="#">Menu3</a></li>
+</ul>
+</div>
+
+<div class="container">
+<h3>Tabs with dropdown menu</h3>
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#">Home</a></li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu1 <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href=#">Submenu 1-1</a></li>
+      <li><a href=#">Submenu 1-2</a></li>
+      <li><a href=#">Submenu 1-3</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Menu2</a></li>
+  <li><a href="#">Menu3</a></li>
+</ul>
+</div>
+
+<div class="container">
+<h3>Pills</h3>
+<p>Pills are created with <code>&ltul class="nav nav-pills"&gt</code></p>
+<ul class="nav nav-pills">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Menu1</a></li>
+  <li><a href="#">Menu2</a></li>
+  <li><a href="#">Menu3</a></li>
+</ul><br>
+
+<p>Pills can also be display vertically. Just add the <code>.nav-stacked</code> class</p>
+<ul class="nav nav-pills nav-stacked">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Menu1</a></li>
+  <li><a href="#">Menu2</a></li>
+  <li><a href="#">Menu3</a></li>
+</ul>
+</div>
+
+<div class="container">
+<h3>Vertical pills in a Row</h3>
+<p>The following places the vertical pill menu inside tha last collumn. So, on a large screen the menu will be displaed to the right. But on a small screen, the content will automatically adjust itself into a single columm layout:</p>
+<div class="col-sm-3">
+  <ul class="nav nav-pills nav-stacked">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu1</a></li>
+    <li><a href="#">Menu2</a></li>
+    <li><a href="#">Menu3</a></li>
+  </ul>
+</div>
+<div class="col-sm-9">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+</div>
+</div>
+
+<div class="container">
+<h3>Pills with Dropdown Menu</h3>
+<ul class="nav nav-pills nav-stacked">
+  <li class="active"><a href="#">Home</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu1 <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Submenu 1-1</a></li>
+        <li><a href="#">Submenu 1-2</a></li>
+        <li><a href="#">Submenu 1-3</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Menu2</a></li>
+    <li><a href="#">Menu3</a></li>
+</ul>
+</div>
+
+<div class="container">
+<h3>Centered Tabs and Pills</h3>
+<p>To center / justify the tabs and pills, use the <code>.nav-justified</code> class</p>
+<p>Note the on screens that are smaller than 786px, the lsit items are stacked (content will remain centered)</p>
+<p>Tabs:</p>
+<ul class="nav nav-tabs nav-justified">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Menu1</a></li>
+  <li><a href="#">Menu2</a></li>
+  <li><a href="#">Menu3</a></li>
+</ul>
+<p>Pills:</p>
+<ul class="nav nav-pills nav-justified">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Menu1</a></li>
+  <li><a href="#">Menu2</a></li>
+  <li><a href="#">Menu3</a></li>
+</ul>
+</div>
+
+<div class="container">
+<h3>Toggleable / Dynamic Tabs</h3>
+<p>To make the tabs toggleable, add the <code>data-toggle="tab"</code> attribute to each link. Then add a <code>.tab-pane</code> class with a unique ID for every tab and wrap them inside a <code>&ltdiv&gt</code> element with class <code>.tab-content</code>.<p>
+<p>If you want the tabs to fade in and out when clicking on them, add the <code>.fade</code> class to <code>.tab-pane</code></p>
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home1">Home</a></li>
+  <li><a data-toggle="tab" href="#menu11">Menu 1</a></li>
+  <li><a data-toggle="tab" href="#menu12">Menu 2</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="home1" class="tab-pane fade in active">
+    <h4>HOME</h4>
+    <p>Some content</p>
+  </div>
+
+  <div id="menu11" class="tab-pane fade">
+    <h4>MENU 1</h4>
+    <p>Some content in menu 1</p>
+  </div>
+
+  <div id="menu12" class="tab-pane fade">
+    <h4>MENU 2</h4>
+    <p>Some content in menu 2</p>
+  </div>
+</div>
+</div>
+
+<div class="container">
+<h3>Toggleable / Dynamic Pills</h3>
+
+<ul class="nav nav-pill12:54 PM 4/15/2021s">
+  <li class="active"><a data-toggle="tab" href="#home2">Home</a></li>
+  <li><a data-toggle="pill" href="#menu21">Menu 1</a></li>
+  <li><a data-toggle="pill" href="#menu22">Menu 2</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="home2" class="tab-pane fade in active">
+    <h4>HOME</h4>
+    <p>Some content</p>
+  </div>
+
+  <div id="menu21" class="tab-pane fade">
+    <h4>MENU 1</h4>
+    <p>Some content in menu 1</p>
+  </div>
+
+  <div id="menu22" class="tab-pane fade">
+    <h4>MENU 2</h4>
+    <p>Some content in menu 2</p>
+  </div>
+</div>
+</div>
+</body>
+</html>

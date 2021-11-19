@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+<h3>Bootstrap provides an easy way to create predefined alert messages:</h3>
+<div class="alert">Basic Alert</div>
+<div class="alert alert-success"><b>Success!</b> This alert box indicates a success full or positive action</div>
+<div class="alert alert-info"><b>Info!</b> This alert box indicates a neutral informative change or action</div>
+<div class="alert alert-warning"><b>Warning!</b> This alert box indicates a warning that might need attention</div>
+<div class="alert alert-danger"><b>Danger!</b> This alert box indicates a dangferous or potentially negative action</div>
+</div>
+
+<div class="container">
+<h3>Close the alert</h3>
+<p>To close the alert message, add a <code>.alert-dismissible</code> class to the alert container. Then add <code>class="close"</code> and <code>data-dismiss="alert"</code> to a link or a button element to make the x show at the end of the <code>div</code> and link it with the <code>alert</code> class (when you click on this the alert box will disapear)</p>
+<p>To help improve accessibility for people using screen readers, you shoudl include the <code>aria-label="close"</code> attribute, when creating a close button</p>
+<p>&times is an HTM entity that is the preferred icon for close buttons, rather than the letter "x"</p>
+<div class="alert alert-dismissible">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Success!</strong> Basic alert
+</div>
+<div class="alert alert-success alert-dismissible">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Success!</strong> This alert box could indicate a successful or positive action.
+</div>
+<div class="alert alert-info alert-dismissible">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+</div>
+<div class="alert alert-warning alert-dismissible">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+</div>
+<div class="alert alert-danger alert-dismissible">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+</div>
+</div>
+
+<div class="container">
+<h3>Animated alert</h3>
+<p>The <code>.fade</code> and <code>.in</code> classes adds a fading effect when closing the alert message:</p>
+<div class="alert alert-success alert-dismissible fade in">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <p><b>Success!</b> Click on &times and I will fade out</p>
+</div>
+<div class="alert alert-warning alert-dismissible fade in">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <p><b>Warning!</b> Click on &times and I will fade out</p>
+</div>
+<div class="alert alert-danger alert-dismissible fade in">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <p><b>Danger!</b> Click on &times and I will fade out</p>
+</div>
+</div>
+</body>
+</html>

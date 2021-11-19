@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    th, td { text-align: center; }
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <h3>Bootstrap Grid System</h3>
+  <p>Bootstrap's grid system allows up to 12 coluns across the page</p>
+  <p>If you do not want to use all 12 column individually, you can group the columns together to crate wider columns</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1" style="text-align:center; color:gray">span 1</div>
+      <div class="col-sm-1" style="text-align:center; color:gray">span 1</div>
+      <div class="col-sm-1" style="text-align:center; color:gray">span 1</div>
+      <div class="col-sm-1" style="text-align:center; color:gray">span 1</div>
+      <div class="col-sm-1" style="text-align:center; color:gray">span 1</div>
+      <div class="col-sm-1" style="text-align:center; color:gray">span 1</div>
+      <div class="col-sm-1" style="text-align:center; color:gray">span 1</div>
+      <div class="col-sm-1" style="text-align:center; color:gray">span 1</div>
+      <div class="col-sm-1" style="text-align:center; color:gray">span 1</div>
+      <div class="col-sm-1" style="text-align:center; color:gray">span 1</div>
+      <div class="col-sm-1" style="text-align:center; color:gray">span 1</div>
+      <div class="col-sm-1" style="text-align:center; color:gray">span 1</div>
+      <div class="col-sm-1" style="text-align:center; color:gray">span 1</div>
+      <div class="col-sm-1" style="text-align:center; color:gray">span 1</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4" style="text-align:center; color:gray">span 4</div>
+      <div class="col-sm-4" style="text-align:center; color:gray">span 4</div>
+      <div class="col-sm-4" style="text-align:center; color:gray">span 4</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4" style="text-align:center; color:gray">span 4</div>
+      <div class="col-sm-8" style="text-align:center; color:gray">span 8</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6" style="text-align:center; color:gray">span 6</div>
+      <div class="col-sm-6" style="text-align:center; color:gray">span 6</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12" style="text-align:center; color:gray">span 12</div>
+    </div>
+  </div>
+
+  <p>Bootstrap's grid system is responsive, and the columns will re-arrange depending on the screen size: On a big screen it might look better with the content organized in three columns, but on a small scren it would be better if the content items were stacked on top of each other</p>
+
+  <p style="padding:30px; background-color:lightyellow"><b>Tip:</b> Remember that grid columns shoudl add up to twelve for a row. Moew than that, columns will stack no matter the viewport.</p>
+</div>
+
+<div class="container">
+  <h3>Grid Classes</h3>
+  <p>The Bootstarp grid sustem has 5 classes:</p>
+  <ul>
+     <li><code>sx</code> (for phones-screens less than 768px wide)</li>
+     <li><code>sm</code> (for tablets-screens equal to or greater than 768 wide)</li>
+     <li><code>md</code> (for small laptops-screens equal to or greater than 992px wide)</li>
+     <li><code>lg</code> (for laptops and desktops-screens equal to or greater than 768px wide)</li>
+  </ul>
+  <p>The classes above can be combined to create more dynamic and flexible layouts</p>
+  <p style="padding:30px; background-color:lightyellow"><b>Tip:</b> Each class scales up, so if you wish to set the same widths for sx and sm, you only need to specify sx</p>
+</div>
+
+<div class="container">
+  <h3>Grid System Rules</h3>
+  <p>Some Bootstrap grid system rules</p>
+  <ul>
+    <li>Rows must be placed within a <code>.container</code> (fixed-width) or <code>.container-fluid</code> (full-width) for proper alignment and padding</li>
+    <li>Use rows to create horizontal groups of columns</li>
+    <li>Content should be placed within columns, and only columns may be immediate children of rows</li>
+    <li>Predefined classes like <code>row</code> and <code>.col-sm-4</code> ar availavble for quickly making grid layouts</li>
+    <li>Columns create qutters (gaps betwwen column content) via padding. That padding is offset in rows for the first and last column via negative margin on <code>.rows</code></li>
+    <li>Grid columns are created by specifying the number of 12 available coumns you wish to span. For example, three equal columns would use three <code>.col-sm-4</code></li>
+    <li>Coumn widhts are in percentage, so they are always fluid and sized rlative to their parent element</li>
+  </ul>
+</div>
+
+<div class="container">
+  <h3>Grid Options</h3>
+  <p>The following table summarizes how th eBootstrap grid system works across multiple devices:</p>
+  <div class="table-responsive">  
+    <table class="table table-hover table-bordered">
+      <thead><tr>
+        <th></th>
+        <th>Extra small</br>&lt768px</th>
+        <th>Small</br>&lt=768px</th>
+        <th>Medium</br>&lt=992px</th>
+        <th>Large</br><&lt=1200px</th>
+      </tr></thead>
+  
+      <tbody>
+        <tr>
+          <td><b>Class prefix</b></td>
+          <td><code>.col-xs-</code></td>
+          <td><code>.col-sm-</code></td>
+          <td><code>.col-md-</code></td>
+          <td><code>.col-lg-</code></td>
+        </tr>
+
+
+        <tr>
+          <td><b>Suitable for</b></td>
+          <td>Phones</td>
+          <td>Tablets</td>
+          <td>Small laptops</td>
+          <td>Laptops & Desktops</td>
+        </tr>
+
+
+        <tr>
+          <td><b>Grid behaviour</b></td>
+          <td>Horizontal at all times</td>
+          <td colspan="3">Collapsed to start, horizontal above break points</td>
+        </tr>
+
+        <tr>
+          <td><b>Container width</b></td>
+          <td>None (auto)</td>
+          <td>750px</td>
+          <td>970px</td>
+          <td>1170px</td>
+        </tr>
+
+        <tr>
+          <td><b># of columns</b></td>
+          <td colspan="4">12</td>
+        </tr>
+
+
+        <tr>
+          <td><b>Column width</b></td>
+          <td>Auto</td>
+          <td>~62px</td>
+          <td>~81px</td>
+          <td>~97px</td>
+        </tr>
+
+
+        <tr>
+          <td><b>Gutter width</b></td>
+          <td colspan="4">30px (15px on each side of a column)</td>
+        </tr>
+
+
+        <tr>
+          <td><b>Nestable</b></td>
+          <td colspan="4">Yes</td>
+        </tr>
+
+
+        <tr>
+          <td><b>Offset</b></td>
+          <td colspan="4">Yes</td>
+        </tr>
+
+
+        <tr>
+          <td><b>Column ordering</b></td>
+          <td colspan="4">Yes</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>

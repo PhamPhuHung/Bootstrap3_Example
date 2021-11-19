@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+  .affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+  .affix + .container-fluid {
+    padding-top: 70px;
+  }
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <h3>The Affix Plugin</h3>
+  <p>The Affix plugin allows an element to become affixed (locked) to an area on the page. This is often used with navigation menus or social icon buttons, to make them "stick" at a specific area while scrolling up and down the page.</p>
+  <p>The plugin <b>toggles</b> this behavior on and off (changes the value of <code>CSS position</code> from <code>static</code> to <code>fixed</code>), depending on scroll position</p>
+  <p>With Affix, when we scroll up and down the page, the menu is always visible and locked in its position</p>
+</div>
+
+<div class="container">
+  <h3>How to create an Affixed Navigation</h3>
+  <p>Add <code>data-spy="affix"</code> to the element you want affixed</p>
+  <p>Optionally, add the <code>data-offset-top|bottom</code> attribute to calculate the position of the scroll.</p>
+  <p>The affix plugin toggles between 3 classes: <code>.affix</code>, <code>.affix-top</code>, and <code>affix-bottom</code>. Each class represents a particular stae. You must add CSS properties to handle the actual positions, which the exception of <code>position:fixed</code> on the <code>.affix</code> class</p>
+  <ul>
+    <li>The plugin adds the <code>affix-top</code> or <code>.affix-bottom</code> class to indicate the element is in its top-most or bottom-most position. Positioning with CSS is note required at this point</li>
+    <li>Scrolling past the affixed elemetn triggers the actual affixing - This is where the plugin replaces the <code>.affix-top</code> or <code>affix-bottom</code> class with the <code>.affix</code> class (sets <code>position:fixed</code>). At this point, you must add the CSS <code>top</code> or <code>bottom</code> property to position the affixed element in the page</p></li>
+    <li>If a bottom offset is defined, scrolling past it replaces the <code>.affix</code> class with <code>.affix-bottom</code>. Since offsets are optional, setting one requires you to set the appropriate CSS. In this case, add <code>position:absolute</code> when necessary</li>
+  </ul>
+  <p>In this example, the Affix plugin adds the <code>.affix</code> class (position:fixed) to the <code>&ltnav&gt</code> element when we have scrolled 197 pixels from the top. If you open the example, you will also see that we added the CCSS <code>top</code> property with a value of 0 to the <code>.affix</code> class. This is to make sure that the navbar stays at the top of the page at all time, when we have scrolled 790px from the top</p>
+</div>
+<div class="container-fluid" style="background-color:#F44336;color:#fff;height:200px;">
+  <h1>Bootstrap Affix Example</h1>
+  <h3>Fixed (sticky) navbar on scroll</h3>
+  <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
+  <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels.</p>
+</div>
+
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="790">
+  <ul class="nav navbar-nav">
+    <li class="active"><a href="#">Basic Topnav</a></li>
+    <li><a href="#">Page 1</a></li>
+    <li><a href="#">Page 2</a></li>
+    <li><a href="#">Page 3</a></li>
+  </ul>
+</nav>
+
+<div class="container-fluid" style="height:1000px">
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+</div>
+</body>
+</html>

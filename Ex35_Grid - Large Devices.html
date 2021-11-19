@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    th, td { text-align: center; }
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <h3>Bootstrap Grid Example: Large Devices</h3>
+  <table class="table table-hover table-bordered">
+    <thead><tr>
+      <th></th>
+      <th>Extra Small</th>
+      <th>Small</th>
+      <th>Medium</th>
+      <th style="color:white; background-color:#555">Large</th>
+    </tr></thead>
+
+    <tbody>
+      <tr>
+        <td>Class prefix</td>
+        <td><code>.col-xs</code></td>
+        <td><code>.col-sm</code></td>
+        <td><code>.col-md</code></td>
+        <td style="color:white; background-color:#555"><code>.col-lg</code></td>
+      </tr>
+
+
+      <tr>
+        <td>Screen width</td>
+        <td>&lt768px</td>
+        <td>&gt=768px</td>
+        <td>&gt=992x</td>
+        <td style="color:white; background-color:#555">&gt=1200px</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>In the previous chapter, we presented a grid example with classes for small & medium devices. We used 2 divs (columns) and we gave them a 25%/75% split on small devices, andn a 50%/50% split on medium devices:</p>
+  <div style="border:20px solid lightgray; background-color:#112; padding:10px">
+    <span style="color:green">&lt</span>
+    <span style="color:pink">div </span>
+    <span style="color:purple">class</span>
+    <span style="color:green">="col-sm-3 col-md-6"&gt</span>
+    <span style="color:white">...</span>
+    <span style="color:green">&lt</span>
+    <span style="color:pink">/div</span>
+    <span style="color:green">&gt </span>
+    <br>
+    <span style="color:green">&lt</span>
+    <span style="color:pink">div </span>
+    <span style="color:purple">class</span>
+    <span style="color:green">="col-sm-9 col-md-6"&gt</span>
+    <span style="color:white">...</span>
+    <span style="color:green">&lt</span>
+    <span style="color:pink">/div</span>
+    <span style="color:green">&gt </span>
+    <br>
+  </div>
+  <p>But on large devices, the design may be better as a 33%/66% split</p>
+  <p style="padding:30px; background-color:lightyellow"><b>Tip:</b> Large devices are defined as having a screen width from <b>1200 and above</b>
+  <p>For medium devices we will use the <code>.col-lg-*</code> classes</p>
+  <p>Now we will add the column widths for large devices:</p>
+  <div style="border:20px solid lightgray; background-color:#112; padding:10px">
+    <span style="color:green">&lt</span>
+    <span style="color:pink">div </span>
+    <span style="color:purple">class</span>
+    <span style="color:green">="col-sm-3 col-md-6 <b>col-lg-4</b>"&gt</span>
+    <span style="color:white">...</span>
+    <span style="color:green">&lt</span>
+    <span style="color:pink">/div</span>
+    <span style="color:green">&gt </span>
+    <br>
+    <span style="color:green">&lt</span>
+    <span style="color:pink">div </span>
+    <span style="color:purple">class</span>
+    <span style="color:green">="col-sm-9 col-md-6 <b>col-lg-8</b>"&gt</span>
+    <span style="color:white">...</span>
+    <span style="color:green">&lt</span>
+    <span style="color:pink">/div</span>
+    <span style="color:green">&gt </span>
+    <br>
+  </div>
+  <p>Now Bootstrap is going to say "at the small size", look at classes with <code>-sm</code> in them and use those. At the medium size, look at classes with <code>-md</code> in them and use those. At the large size, look at classes with the word <code>-lg</code> in them and use those"</p>
+  <p>The following example will result in a 25%/75% split on small devices, a 50%/50% split on medium devices, and a 33%/66% split on large devices. On extra small devices, it will automatically stack (100%)</p>
+  <div class="row">
+    <div class="col-sm-3 col-md-6 col-lg-4" style="background-color:yellow;">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+    <div class="col-sm-9 col-md-6 col-lg-8" style="background-color:pink;">
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    </div>
+  </div>
+  <p style="padding:30px; background-color:lightyellow"><b>Note;</b> Make sure that the sum alwyas adds up to 12</p>
+</div>
+</body>
+</html>
